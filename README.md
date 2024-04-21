@@ -28,7 +28,7 @@ Após a instalação das dependências, rode o comando abaixo
 
 Com este comando a aplicação irá rodar no ambiente de desenvolvimento apontando para a URL `http://localhost:4200/`.
 
-## Executando testes unitários unit tests
+## Executando testes unitários
 
 Rode o comando `ng test` para executar os testes unitários via [Karma](https://karma-runner.github.io).
 
@@ -36,4 +36,4 @@ Rode o comando `ng test` para executar os testes unitários via [Karma](https://
 
 Para que o sistema funcione corretamente você irá precisar da API utilziada no projeto rodando localmente.
 
-A Api pode ser clonada nesse repositório XXXX
+A Api pode ser clonada nesse repositório [https://github.com/gustavolarsen/mock-db](https://github.com/gustavolarsen/mock-db)
