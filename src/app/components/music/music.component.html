@@ -1,0 +1,64 @@
+<div class="container">
+  <h1>Cadastro de músicas</h1>
+  <form #musicForm="ngForm" class="row">
+    <div>
+      <label class="form-label">Id</label>
+      <input
+        class="form-control"
+        type="text"
+        disabled
+        [(ngModel)]="id"
+        name="id"
+      />
+    </div>
+
+    <div>
+      <label for="author" class="form-label">Banda</label>
+      <input
+        class="form-control"
+        type="text"
+        [(ngModel)]="author"
+        name="author"
+      />
+    </div>
+
+    <div>
+      <label for="song" class="form-label">Música</label>
+      <input class="form-control" type="text" [(ngModel)]="song" name="song" />
+    </div>
+
+    <div class="my-3">
+      <button class="btn btn-primary" (click)="salvarMusica(musicForm)">
+        {{ id ? "SALVAR" : "INCLUIR" }}
+      </button>
+    </div>
+  </form>
+
+  <table class="table table-striped my-10">
+    <thead>
+      <th scope="col">Id</th>
+      <th scope="col">Banda</th>
+      <th scope="col">Música</th>
+      <th scope="col"></th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let musica of musicas$ | async">
+        <th scope="row">{{ musica.id }}</th>
+        <td>{{ musica.author }}</td>
+        <td>{{ musica.song }}</td>
+        <td class="d-flex flex-row-reverse">
+          <button class="btn btn-danger" (click)="removerMusica(musica.id!)">
+            EXCLUIR
+          </button>
+          <button
+            class="btn btn-secondary mx-2"
+            (click)="preencherCampos(musica)"
+          >
+            EDITAR
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
