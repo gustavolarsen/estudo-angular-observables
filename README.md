@@ -12,6 +12,11 @@ Este projeto também serviu para praticar a implemetação de testes unitários 
 
 O foco desse trabalho em nenhum momento foi o design visual, por isso foi criada uma interface extremamente simples com [Bootstrap 5](https://getbootstrap.com/).
 
+### Interface do projeto
+
+![image](https://github.com/gustavolarsen/estudo-angular-observables/assets/55494775/e1ef9b89-2318-48a2-bd84-2518de7e847b)
+
+
 ### Pré-requisitos
 
 Ter um ambiente que seja possuvel executar Node e Angular
