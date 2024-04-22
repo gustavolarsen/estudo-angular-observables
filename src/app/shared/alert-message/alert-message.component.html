@@ -1,0 +1,14 @@
+<div
+  class="alert alert-danger alert-dismissible fade show"
+  role="alert"
+  *ngIf="showAlert"
+>
+  {{ mensagem }}
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+    (click)="hideBootstrapAlert()"
+  ></button>
+</div>

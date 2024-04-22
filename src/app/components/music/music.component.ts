@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Music } from 'src/app/interfaces/music';
 import { MusicService } from 'src/app/services/music.service';
+import { AlertMessageComponent } from 'src/app/shared/alert-message/alert-message.component';
 
 @Component({
   selector: 'app-music',
@@ -10,6 +11,7 @@ import { MusicService } from 'src/app/services/music.service';
   styleUrls: ['./music.component.scss'],
 })
 export class MusicComponent {
+  @ViewChild(AlertMessageComponent) alertMessage!: AlertMessageComponent;
   private musicService: MusicService;
   public musicas$ = new Observable<Music[]>();
 
@@ -46,7 +48,7 @@ export class MusicComponent {
       }
       musicForm.reset();
     } else {
-      alert('Dados obrogatórios não informados');
+      this.alertMessage.showBootstrapAlert();
     }
   }
 
