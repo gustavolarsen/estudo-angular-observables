@@ -12,6 +12,11 @@ Este projeto também serviu para praticar a implemetação de testes unitários 
 
 O foco desse trabalho em nenhum momento foi o design visual, por isso foi criada uma interface extremamente simples com [Bootstrap 5](https://getbootstrap.com/).
 
+### Interface do projeto
+
+![image](https://github.com/gustavolarsen/estudo-angular-observables/assets/55494775/e1ef9b89-2318-48a2-bd84-2518de7e847b)
+
+
 ### Pré-requisitos
 
 Ter um ambiente que seja possuvel executar Node e Angular
@@ -28,7 +33,7 @@ Após a instalação das dependências, rode o comando abaixo
 
 Com este comando a aplicação irá rodar no ambiente de desenvolvimento apontando para a URL `http://localhost:4200/`.
 
-## Executando testes unitários unit tests
+## Executando testes unitários
 
 Rode o comando `ng test` para executar os testes unitários via [Karma](https://karma-runner.github.io).
 
@@ -36,4 +41,4 @@ Rode o comando `ng test` para executar os testes unitários via [Karma](https://
 
 Para que o sistema funcione corretamente você irá precisar da API utilziada no projeto rodando localmente.
 
-A Api pode ser clonada nesse repositório XXXX
+A Api pode ser clonada nesse repositório [https://github.com/gustavolarsen/mock-db](https://github.com/gustavolarsen/mock-db)
