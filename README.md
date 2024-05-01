@@ -8,7 +8,7 @@ Este projeto foi desenvolvido com o objetivo de entender a forma de trabalho do 
 
 Para isso foi criado um CRUD onde é possível adicionar, editar, listar e excluir músicas de um banco de dados fitício.
 
-Este projeto também serviu para praticar a implemetação de testes unitários comoo Karma. Foram criados cenários para o componente `music.component` e para service `music.service`
+Este projeto também serviu para praticar a implemetação de testes unitários com Karma. Foram criados cenários para o componente `music.component` e para service `music.service`
 
 O foco desse trabalho em nenhum momento foi o design visual, por isso foi criada uma interface extremamente simples com [Bootstrap 5](https://getbootstrap.com/).
 
